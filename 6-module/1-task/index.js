@@ -62,14 +62,3 @@ export default class UserTable {
 
 }
 
-
-
-//   this.elem.innerHTML = `<thead>
-//   <tr>
-//     <th>Имя</th>
-//     <th>Возраст</th>
-//     <th>Зарплата</th>
-//     <th>Город</th>
-//     <th></th>
-//   </tr>
-// </thead>`
