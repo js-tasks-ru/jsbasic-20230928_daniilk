@@ -25,6 +25,8 @@ export default class ProductCard {
     </div>
     `)
 
+    console.log(document.body.querySelector('.card'))
+
     this.#elem.querySelector('.card__button').addEventListener('click',this.onClick)
     document.addEventListener('product-add', (e)=>{console.log(e.detail)})
   }
