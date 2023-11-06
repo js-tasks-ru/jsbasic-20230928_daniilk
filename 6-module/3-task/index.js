@@ -41,7 +41,7 @@ export default class Carousel {
     
    console.log('slidesLeng', this.lengthSlider)
   document.body.appendChild(this.#elem);
-  //  console.log(document.querySelector('.carousel')) // пока не написал 42 строку, здесь был null
+   console.log(document.querySelector('.carousel')) // пока не написал 42 строку, здесь был null
 
   
   
