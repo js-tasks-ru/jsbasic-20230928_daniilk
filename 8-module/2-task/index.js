@@ -27,7 +27,7 @@ export default class ProductGrid {
   }
  
   updateFilter(filters) {
-    this.filters = Object.assign({},this.filters, filters);
+    this.filters = Object.assign(this.filters, filters);
     let products = this.products.filter((elem) => {
       if (
         (!this.filters.noNuts || this.filters.noNuts !== elem.nuts) &
