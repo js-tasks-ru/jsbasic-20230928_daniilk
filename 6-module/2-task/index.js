@@ -2,7 +2,7 @@ import createElement from '../../assets/lib/create-element.js';
 
 export default class ProductCard {
   #elem
-  #data
+ #data
   constructor(product) {
     this.#data = product;
     this.#elem = document.createElement('div')
@@ -25,7 +25,7 @@ export default class ProductCard {
     </div>
     `)
 
-    console.log(document.body.querySelector('.card'))
+    // console.log(document.body.querySelector('.card'))
 
     this.#elem.querySelector('.card__button').addEventListener('click',this.onClick)
     document.addEventListener('product-add', (e)=>{console.log(e.detail)})

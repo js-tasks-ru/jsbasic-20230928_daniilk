@@ -69,14 +69,17 @@
       products: [],
 
       isEmpty() {
+        // console.log('запущено empty: ', this.products.length === 0 )
         return this.products.length === 0;
       },
 
       getTotalCount() {
+        // console.log('запущено count: ', this.products.length)
         return this.products.length;
       },
 
       getTotalPrice() {
+        // console.log('запущено price ', this.products.reduce((totalPrice, product) => totalPrice + product.price, 0))
         return this.products.reduce((totalPrice, product) => totalPrice + product.price, 0);
       }
     }
@@ -91,7 +94,8 @@
     addProductButton.onclick = () => {
       let productToAdd = Object.assign({}, product);
       cart.products.push(productToAdd);
-
+      // console.log(cart.products)
+      // console.log(cart)
       cartIcon.update(cart);
     };
 
